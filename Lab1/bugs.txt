@@ -1,0 +1,9 @@
+In the doneCopy section of the code:
+
+addi $s1 $s1 -2 was in the loop, causing it to be called more than neccessary.
+Move it out of doneCopy, above it to work.
+
+lw $t1 0($s0) was loading a word, not the byte. Change it to load byte.
+
+addi $s0 $s0 4 was stepping for a word, but we're loading bytes so change it
+to 1.

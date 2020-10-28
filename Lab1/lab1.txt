@@ -1,0 +1,85 @@
+Question 1.
+The output of the program was "mipsiscool".
+
+Question 2.
+The highest value that $s0 got during the program was 0x1001000b.
+
+Question 3.
+The value of the PC when $s0 was at its highest value was 00400034.
+
+Question 4.
+lb was used 11 times.
+These values were stored 
+0000006d
+00000069
+00000070
+00000073
+00000069
+00000073
+00000063
+0000006f
+0000006f
+0000006c
+00000000
+sb was used 11 times.
+0000006d
+00000069
+00000070
+00000073
+00000069
+00000073
+00000063
+0000006f
+0000006f
+0000006c
+00000000
+
+Question 5.
+10010000
+10010001
+10010002
+10010003
+10010004
+10010005
+10010006
+10010007
+10010008
+10010009
+1001000a
+1001000b
+
+Question 6.
+00240821
+NAK
+BS
+$
+NUL
+
+Question 7.
+0001 0010 1000 0000 0100 0010 0000 0000
+167789056
+
+Question 8.
+.word 21,28,-5,-10
+Stores these 32-bit values in memory, successively.
+21 is stored in 0x10010000
+28 is stored in 0x10010004
+-5 is stored in 0x10010008
+-10 is stored in 0x1001000C
+.byte 10,'c'
+Stores these 2-bit values in memory, successively.
+10 is stored in 0x10010010
+'c' is stored in 0x10010011
+.align 2
+Aligns the next value on a word boundary.
+.space 9
+Gives 9 bytes of space in memory.
+.asciiz "ABCD"
+Stores the string "ABCD" in memory, without null-termination.
+The string starts at 0x1001001d
+.ascii "EF"
+Stores "EF" in memory, with null-termination.
+The string starts at 0x10010023
+
+Question 10.
+We could read the stack until we reached the start of the address.
